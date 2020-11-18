@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'apache.ignite.issue10075'
+version '1.0.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+def igniteVer='2.9.0'
+
+dependencies {
+    compile group: 'org.apache.ignite', name: 'ignite-core', version: igniteVer
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
